@@ -1,0 +1,341 @@
+/* Font use in this website */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+/* Full body */
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* Top */
+.banner {
+  background-color: rgb(68, 52, 52);
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  gap: 60px;
+  margin: 3% 5% 0;
+  border-radius: 15px;
+  padding: 0 5%;
+  height: 60vh;
+  color: white;
+}
+
+.headerText {
+  font-size: 50px;
+}
+
+.WatchLiveButton {
+  border: none;
+  color: white;
+  background-color: rgb(194, 60, 60);
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+.fa-greater-than {
+  margin-left: 10px;
+}
+.bannerImage {
+  height: 100%;
+  display: block;
+  animation: zoom-in-zoom-out 3s ease-in-out infinite;
+}
+/* Animation */
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1) rotate(-10deg);
+  }
+  25% {
+    transform: scale(1.1 1.1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.15, 1.15) rotate(10deg);
+  }
+  75% {
+    transform: scale(1.1, 1.1) rotate(-0deg);
+  }
+  100% {
+    transform: scale(1, 1) rotate(-10deg);
+  }
+}
+/* Navigation */
+.cardAndNav {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 3% 5% 0;
+  gap: 20px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around !important;
+  align-items: center;
+  background-color: rgb(66, 49, 49);
+  border-radius: 15px;
+
+  height: 250px;
+  position: sticky;
+  top: 350px;
+  padding: 10px 0px;
+}
+.navigation button {
+  background-color: white;
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: rgb(172, 48, 48);
+  color: white;
+}
+/* Card */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 15px;
+  grid-column-gap: 15px;
+}
+.card {
+  border: 1px solid rgb(66, 63, 63);
+  border-radius: 10px;
+}
+.cardImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px;
+}
+.cardImg img {
+  width: 75%;
+  border-radius: 10px;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.cardBody button {
+  background-color: white;
+}
+.fa-message {
+  margin-left: 20px;
+}
+/* Footer */
+.footer {
+  margin-top: 50px;
+  height: 40vh;
+  background-color: rgb(34, 32, 32);
+}
+.footerTitle {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  color: white;
+}
+
+hr {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.footerDetails {
+  color: white;
+}
+.footerCondition {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-weight: 100;
+  padding-top: 50px;
+}
+
+.socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 15px;
+  font-size: 30px;
+}
+.viewAllSection {
+  display: none;
+}
+/* Responsive */
+/* FOR MOBILE */
+@media only screen and (max-width: 500px) {
+  .banner {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 1% 2% 0;
+    border-radius: 15px;
+    padding: 0 5%;
+    height: 60vh;
+    color: white;
+  }
+  .short-text {
+    white-space: nowrap;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .banner p {
+    font-size: 16px;
+    width: 100px;
+  }
+  .bannerImage {
+    height: 75%;
+    margin-top: -30px;
+  }
+  .WatchLiveButton {
+    height: 30px;
+  }
+  .cardAndNav {
+    display: block;
+
+    margin: 3% 1% 0;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+    width: 100%;
+
+    position: inherit;
+    margin: 0;
+    height: 60px;
+  }
+  .navigation button {
+    background-color: white;
+    border: none;
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+  }
+  .viewAllSection {
+    display: none;
+  }
+  .footer {
+    margin-top: 20px;
+    height: 50vh;
+    background-color: black;
+  }
+  .footerCondition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 10px;
+  }
+}
+/* FOR TABLET */
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .banner {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    margin: 1% 2% 0;
+    border-radius: 15px;
+    padding: 0 5%;
+    height: 35vh;
+    color: white;
+  }
+  .banner h1 {
+    font-size: 20px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .bannerImage {
+    height: 75%;
+  }
+  .WatchLiveButton {
+    height: 30px;
+  }
+  .cardAndNav {
+    display: block;
+
+    margin: 3% 1% 0;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+
+    height: 60px;
+    position: inherit;
+
+    margin: 0 0 10px 0;
+    padding: 10px 20px;
+  }
+  .navigation button {
+    background-color: white;
+    border: none;
+    height: 50px;
+
+    border-radius: 15px;
+    font-weight: bold;
+  }
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .viewAllSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .viewAllButton {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: transparent;
+    background-color: rgb(224, 41, 41);
+  }
+  .footer {
+    margin-top: 20px;
+    height: 30vh;
+    background-color: black;
+  }
+  .footerCondition {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 20px 0;
+  }
+}
